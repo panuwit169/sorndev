@@ -1,0 +1,51 @@
+<template>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <router-link to = "/main">
+        <a class="navbar-brand" href="#" style="padding:0px 30px 0 50px">
+          <img alt="SornDev" src="../assets/learning.png" width="50px">
+        </a>
+      </router-link>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <router-link to = "/menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Courses</a></li>
+        </ul>
+      </router-link>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-form navbar-left">
+        </div>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</template>
+
+
+<style scoped>
+.navbar{
+  background-color: #1b1920;
+  border: 0px solid #000;
+  margin: 0px;
+  padding: 10px 0;
+}
+a:hover{
+  color:#fff;
+}
+
+.nav{
+  font-size: 16px;
+}
+</style>
