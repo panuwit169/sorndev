@@ -3,20 +3,20 @@
     <div class="container">
       <div class="col-xs-12 col-md-6">
         <div class="title">
-          <h1>Huge selection of front-end developer screencasts!</h1>
+          <h1>Developers สามารถเรียนรู้ได้ด้วยตนเองผ่านหน้าจอที่บ้าน!</h1>
         </div>
         <div class="des vcenter">
           <img class="des col-md-3" src="../assets/youtube.png" width="50px"></img>
-          <p class="des col-md-9">Watch top coders problem-solve in real time</p>
+          <p class="des col-md-9">วิดีโอจาก YouTube คัดสรรมาอย่างดี</p>
           </img>
         </div>
         <div class="des vcenter">
           <img class="des col-md-3" src="../assets/watch.png" width="50px"></img>
-          <p class="des col-md-9">Increase your knowledge in bite-sized chunks. Lessons are concise, with most under 10 minutes long.</p>
+          <p class="des col-md-9">เพิ่มเติมความรู้ของคุณ ด้วยบทเรียนต่าง ๆ ส่วนใหญ่วิดีโอมีความยาวน้อยกว่า 20 นาที</p>
         </div>
         <div class="des vcenter">
           <img class="des col-md-3" src="../assets/coding.png" width="50px"></img>
-          <p class="des col-md-9">Gain access to all the code and transcripts</p>
+          <p class="des col-md-9">เข้าถึงทุกภาษาสำหรับ Developers</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6" style="overflow: hidden;">

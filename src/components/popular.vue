@@ -8,16 +8,16 @@
               <img class="img" src="../assets/logo.png" width="120">
             </div>
             <div class="col-md-8 title">
-              <a href="#!">Get Started with Vue.JS</a>
+              <a href="#!">เริ่มต้นศึกษา Vue.JS</a>
               <hr>
-              <p style="display:inline-block">with JOHN LINDQUIST</p>
+              <p style="display:inline-block">กับ CodeAddictTH</p>
               <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
             </div>
           </div>
           <div class="col-xs-12 col-md-5">
             <div class="headtitle">
-              <h1>Most popular courses</h1>
-              <a href="#!" class="link">CLICK HERE TO FIND A COURSE TO WATCH</a>
+              <h1>Course ยอดนิยม</h1>
+              <a href="#!" class="link">เลือก Course อื่น</a>
             </div>
           </div>
         </div>
@@ -27,9 +27,9 @@
               <img class="img" src="../assets/angular.png" width="120">
             </div>
             <div class="col-md-8 title">
-              <a href="#!">Get Started with AngularJS</a>
+              <a href="#!">เริ่มต้นศึกษา AngularJS</a>
               <hr>
-              <p style="display:inline-block">with JOHN LINDQUIST</p>
+              <p style="display:inline-block">กับ Kong Ruksiam</p>
               <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
             </div>
           </div>
@@ -38,9 +38,9 @@
               <img class="img" src="../assets/javascript.png" width="120">
             </div>
             <div class="col-md-8 title">
-              <a href="#!">Get Started with JavaScript</a>
+              <a href="#!">เริ่มต้นศึกษา JavaScript</a>
               <hr>
-              <p style="display:inline-block">with JOHN LINDQUIST</p>
+              <p style="display:inline-block">กับ CodeAddictTH</p>
               <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
             </div>
           </div>

@@ -2,7 +2,7 @@
   <div class="course">
     <div class="container">
       <div class="title">
-        <h1><strong>The insider’s guide to cutting-edge<br>front-end tools and frameworks</strong></h1>
+        <h1><strong>คู่มือเทคโนโลยล่าสุด<br>Front-End และ Frameworks</strong></h1>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -24,7 +24,7 @@
           </div>
         </div>
         <router-link to = "/menu">
-          <a href="#!" class="title">EXPLORE THE LIBRARY OF LESSONS</a>
+          <a href="#!" class="title">เลือก Course อื่น ๆ</a>
         </router-link>
     </div>
     </div>

@@ -2,20 +2,20 @@
   <div class="join">
     <div class="container">
       <img src="../assets/join.png" width="150px">
-      <h1>Join the Programming Elite</h1>
+      <h1>เพิ่มเลเวลทางด้าน Programming กันเถอะ!</h1>
       <div class="row">
         <div class="col-xs-12 col-md-6 centered">
           <img src="../assets/join1.png" width="80%">
         </div>
         <div class="col-xs-12 col-md-6 centered">
-          <h3>Better career opportunities</h3>
-          <p style="text-align:left">Get the promotion, join your dream company, or strike out on your own. We help you take control of your career.</p>
+          <h3>เพิ่มโอกาสในการทำงานให้ดียิ่งขึ้น</h3>
+          <p style="text-align:left">ได้รับการเลือนตำแหน่ง,เข้าทำงานกับบริษัทในฝันของคุณ หรือสร้างธุรกิจส่วนตัว เราสามารถช่วยคุณได้</p>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-6 centered">
-          <h3>Stay up-to-date</h3>
-          <p style="text-align:left">Front-end frameworks evolve at the speed of light. We keep you speeding right along side them.</p>
+          <h3>ทันสมัยต่อโลก</h3>
+          <p style="text-align:left">เรียนรู้ Front-End Frameworks ใหม่ ๆ เราสามารถช่วยคุณได้</p>
         </div>
         <div class="col-xs-12 col-md-6 centered">
           <img src="../assets/join2.png" width="80%">
@@ -26,8 +26,8 @@
           <img src="../assets/join3.png" width="80%">
         </div>
         <div class="col-xs-12 col-md-6 centered">
-          <h3>Confidence & expertise</h3>
-          <p style="text-align:left">Take the lead and step into the top tiers of programming. You’ll gain expert skills that put you among the best.</p>
+          <h3>มีความเชี่ยวชาญจากกูรูเฉพาะด้าน</h3>
+          <p style="text-align:left">ช่วยคุณก้าวสู่จุดสู่สุดของ Development เราสามารถช่วยคุณได้</p>
         </div>
       </div>
     </div>
