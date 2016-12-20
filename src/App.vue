@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <div v-for = "list in listplay">
-    </div>
     <router-view :listplay="listplay"></router-view>
   </div>
 </template>

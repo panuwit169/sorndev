@@ -1,32 +1,25 @@
 <template>
   <div class="app">
     <Navbar></Navbar>
-    <Video></Video>
+    <Video :play="play"></Video>
     <div class="play">
       <div class="container">
           <div class="col-md-12" style="height:478px;overflow: hidden;">
             <div class="col-xs-8 col-md-9" style="padding:0px">
               <div class="embed-responsive embed-responsive-16by9" style="border:5px solid #555">
-                <iframe class="embed-responsive-item" :src="'http://www.youtube.com/embed/-bzWSJG93P8?autoplay=1'"  frameborder="0" allowfullscreen ></iframe>
+                <iframe class="embed-responsive-item" :src="'http://www.youtube.com/embed/'+ link + '?autoplay=1'"  frameborder="0" allowfullscreen ></iframe>
               </div>
             </div>
             <div class="col-xs-4 col-md-3 scrollbar" id="style-1">
-              <!-- <div v-for ="(list, index) in play.list" @click = "setlink(list.link)"> -->
+              <div v-for ="(list, index) in play.list" @click = "setlink(list.link)">
               <a class="list">
                 <div class="img">
-                  <strong>1&nbsp;</strong>
-                  <img class="pull-left" src="../assets/angular.png" width="50px">
-                  <strong style="text-align:left">&nbsp;1</strong>
+                  <strong style="padding:0 10px">{{index+1}}</strong>
+                  <img class="pull-left" :src="play.img" width="50px">
+                  <strong style="text-align:left;padding:0 10px">ตอนที่ {{index+1}} {{list.ep}}</strong>
                 </div>
               </a>
-              <a class="list">
-                <div class="img">
-                  <strong>2&nbsp;</strong>
-                  <img class="pull-left" src="../assets/angular.png" width="50px">
-                  <strong style="text-align:left">&nbsp;2</strong>
-                </div>
-              </a>
-            <!-- </div> -->
+            </div>
             </div>
           </div>
       </div>
@@ -41,13 +34,32 @@ import Video from './Video'
 import Footers from './Footers'
 
 export default {
+  props: ['listplay'],
   components: {
     Navbar,
     Video,
     Footers
   },
+  computed: {
+    play () {
+      let vm = this
+      return vm.listplay.find(item => item.name === vm.$route.params.play)
+    }
+  },
   data () {
     return {
+      link: ''
+    }
+  },
+  mounted () {
+    // var vm = this
+    this.link = this.play.list[0].link
+    let vm = this
+    return vm.listplay.find(item => item.name === vm.$route.params.play)
+  },
+  methods: {
+    setlink (link) {
+      this.link = link
     }
   }
 }

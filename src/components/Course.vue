@@ -1,8 +1,8 @@
 <template>
   <div class="app">
     <Navbar></Navbar>
-    <Allcourse></Allcourse>
-    <Recommendcourse></Recommendcourse>
+    <Allcourse :listplay="listplay"></Allcourse>
+    <!-- <Recommendcourse :listplay="listplay"></Recommendcourse> -->
     <Footers></Footers>
   </div>
 </template>
@@ -14,6 +14,7 @@ import Recommendcourse from './Recommendcourse'
 import Footers from './Footers'
 
 export default {
+  props: ['listplay'],
   components: {
     Navbar,
     Allcourse,

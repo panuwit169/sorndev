@@ -1,75 +1,55 @@
 <template>
   <div class="course">
     <div class="container">
-      <div class="list">
+      <div class="list" v-for = "(list, index) in listplay">
         <div class="logo">
-          <img src="../assets/logo.png" width="100">
-          <h3>Vue.JS Lessons</h3>
+          <img :src="list.img" width="100">
+          <h3>{{list.name}} Lessons</h3>
         </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/logo.png" width="70">
-              <p>ตอนที่ 1 - V-Install</p>
-            </a>
+        <!-- <div class="col-xs-6 col-md-4">
+          <div v-for ="(list, index) in play.list" @click = "setlink(list.link)">
+            <div class="item">
+              <a href="#!" class="thumbnail">
+                <p class="by">สอนโดย CodeAddictTH</p>
+                <img class="menu" src="../assets/logo.png" width="70">
+                <p>ตอนที่ {{index+1}} - {{list.ep}}</p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/logo.png" width="70">
-              <p>ตอนที่ 2 - V-Model</p>
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/logo.png" width="70">
-              <p>ตอนที่ 3 - V-On</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="list">
-        <div class="logo">
-          <img src="../assets/angular.png" width="100">
-          <h3>AngularJS Lessons</h3>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/angular.png" width="70">
-              <p>ตอนที่ 1 - ติดตั้งและใช้งาน</p>
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/angular.png" width="70">
-              <p>ตอนที่ 2 - Directive และ Expression</p>
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="item">
-            <a href="#!" class="thumbnail">
-              <p class="by">สอนโดย CodeAddictTH</p>
-              <img class="menu" src="../assets/angular.png" width="70">
-              <p>ตอนที่ 3 - NgModel directive</p>
-            </a>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['listplay'],
+  computed: {
+    play () {
+      let vm = this
+      return vm.listplay.find(item => item.name === vm.$route.params.play)
+    }
+  },
+  data () {
+    return {
+      link: ''
+    }
+  },
+  mounted () {
+    // var vm = this
+    this.link = this.play.list[0].link
+    let vm = this
+    return vm.listplay.find(item => item.name === vm.$route.params.play)
+  },
+  methods: {
+    setlink (link) {
+      this.link = link
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 .course{

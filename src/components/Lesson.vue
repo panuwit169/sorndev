@@ -1,22 +1,16 @@
 <template>
-  <div class="video">
-    <div class="container">
-      <div class="header col-md-12">
-        <div class="title pull-left">
-          <li>
-            <img :src="play.img" width="100">
-          </li>
-          <li>
-            <h1><strong>{{play.name}}</strong></h1>
-          </li>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="description">
-          <p>{{play.description}}</p>
-        </div>
+  <div class="lesson">
+  <div class="col-xs-6 col-md-4">
+    <div v-for ="(list, index) in play.list" @click = "setlink(list.link)">
+      <div class="item">
+        <a href="#!" class="thumbnail">
+          <p class="by">สอนโดย CodeAddictTH</p>
+          <img class="menu" src="../assets/logo.png" width="70">
+          <p>ตอนที่ {{index+1}} - {{list.ep}}</p>
+        </a>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

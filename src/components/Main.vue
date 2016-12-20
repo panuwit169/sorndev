@@ -2,9 +2,9 @@
   <div class="app">
     <Navbar></Navbar>
     <Mainbanner></Mainbanner>
-    <Coursemenu></Coursemenu>
+    <Coursemenu :listplay="listplay"></Coursemenu>
     <Mainbanner2></Mainbanner2>
-    <Popular></Popular>
+    <Popular :listplay="listplay"></Popular>
     <Join></Join>
     <Footers></Footers>
   </div>
