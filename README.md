@@ -1,6 +1,6 @@
 # sorndev
 
-> สอ
+> วิดีโอการสอน Web Development สำหรับ Developer 
 
 ## Build Setup
 
