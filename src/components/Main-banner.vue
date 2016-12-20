@@ -4,7 +4,7 @@
       <div class="container">
           <h1 class="banner_h1">วิดีโอการสอน Web Development สำหรับ Developer</h1>
           <p class="banner_p">เรียนรู้ Frameworks ล่าสุดจากผู้เชี่ยวชาญเฉพาะทาง</p>
-          <router-link to = "/menu">
+          <router-link to = "/course">
           <a href="#"><button class="btn btn-danger" style="padding:15px"><strong>PICK A COURSE TO WATCH</strong></button></a>
           </router-link>
       </div>

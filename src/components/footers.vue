@@ -3,17 +3,17 @@
     <div class="container">
       <div class="col-xs-12 col-md-4">
         <div class="link">
-          <li><a href="#!">Home</a></li>
-          <li><a href="#!">Course</a></li>
+          <li><router-link to = "/main"><a href="#">Home</a></router-link></li>
+          <li><router-link to = "/course"><a href="#">Course</a></router-link></li>
         </div>
         <div class="link">
-          <li><a href="#!">© SornDev</a></li>
+          <li><router-link to = "/main"><a href="#!">© SornDev</a></router-link></li>
           <li><a href="https://www.facebook.com/mildpanuwit.ynwa">By Panuwit Sattayawattanagul</a>,<a href="https://www.facebook.com/groups/InformationTechnology/?fref=ts">IT@KMUTNB</a></li>
         </div>
       </div>
       <div class="col-xs-12 col-md-8">
         <div class="linklogo">
-          <a class="logo" href="#!"><img src="../assets/learning.png" width="60px">&nbsp;&nbsp;SornDev</a>
+          <router-link to = "/main"><a class="logo" href="#"><img src="../assets/learning.png" width="60px">&nbsp;&nbsp;SornDev</a></router-link>
         </div>
       </div>
     </div>

@@ -18,9 +18,8 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <router-link to = "/menu">
+      <router-link to = "/course">
         <ul class="nav navbar-nav">
-          <li><a href="#">Browse</a></li>
           <li><a href="#">Courses</a></li>
         </ul>
       </router-link>

@@ -2,7 +2,7 @@
   <div class="course">
     <div class="container">
       <div class="title">
-        <h1><strong>คู่มือเทคโนโลยล่าสุด<br>Front-End และ Frameworks</strong></h1>
+        <h1><strong>คู่มือเทคโนโลยีล่าสุด<br>Front-End และ Frameworks</strong></h1>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -23,7 +23,7 @@
           </a>
           </div>
         </div>
-        <router-link to = "/menu">
+        <router-link to = "/course">
           <a href="#!" class="title">เลือก Course อื่น ๆ</a>
         </router-link>
     </div>

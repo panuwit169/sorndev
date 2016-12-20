@@ -20,6 +20,7 @@ import Join from './Join'
 import Footers from './Footers'
 
 export default {
+  props: ['listplay'],
   components: {
     Navbar,
     Mainbanner,

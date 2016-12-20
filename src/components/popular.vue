@@ -17,7 +17,7 @@
           <div class="col-xs-12 col-md-5">
             <div class="headtitle">
               <h1>Course ยอดนิยม</h1>
-              <a href="#!" class="link">เลือก Course อื่น</a>
+              <router-link to = "/course"><a href="#!" class="link">เลือก Course อื่น ๆ</a></router-link>
             </div>
           </div>
         </div>
