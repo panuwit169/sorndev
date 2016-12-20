@@ -2,7 +2,7 @@
   <div id="app">
     <div v-for = "list in listplay">
     </div>
-    <router-view :playlist="listplay"></router-view>
+    <router-view :listplay="listplay"></router-view>
   </div>
 </template>
 
@@ -15,20 +15,17 @@
 import firebase from 'firebase'
 
 var config = {
-  apiKey: 'AIzaSyDjI8vU1Ej2jGsuXTKj26MKMSVIOU8nCYU',
-  authDomain: 'project-c2a75.firebaseapp.com',
-  databaseURL: 'https://project-c2a75.firebaseio.com',
-  storageBucket: 'project-c2a75.appspot.com',
-  messagingSenderId: '584449234491'
-}
+    apiKey: "AIzaSyDzZeuk5iAFxBciQ1mDErvqe1UZF15Rf5c",
+    authDomain: "sorndev.firebaseapp.com",
+    databaseURL: "https://sorndev.firebaseio.com",
+    storageBucket: "sorndev.appspot.com",
+    messagingSenderId: "857410261779"
+  }
+
 firebase.initializeApp(config)
 var Listplay = firebase.database().ref('listplay')
 
 export default {
-  name: 'app',
-  components: {
-
-  },
   data () {
     return {
       listplay: []

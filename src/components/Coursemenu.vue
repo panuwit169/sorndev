@@ -6,21 +6,15 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail" style="vertical-align: middle">
-              <img class="menu" src="../assets/logo.png" width="120">
-            <h4>
-              Vue.JS
-            </h4>
-          </a>
-          </div>
-          <div class="col-xs-6 col-md-2">
-            <a href="#" class="thumbnail" style="vertical-align: middle">
-              <img class="menu" src="../assets/angular.png" width="120">
-            <h4>
-              AngularJS
-            </h4>
-          </a>
+          <div class="col-xs-6 col-md-2" v-for = "(list, index) in listplay" v-show="index<6">
+            <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
+              <a href="#" class="thumbnail" style="vertical-align: middle">
+                <img class="menu" :src="list.img" width="120">
+              <h4>
+                {{list.name}}
+              </h4>
+              </a>
+            </router-link>
           </div>
         </div>
         <router-link to = "/course">
@@ -31,6 +25,16 @@
     <hr>
   </div>
 </template>
+
+<script>
+  export default {
+    props: ['listplay'],
+    data () {
+      return {
+      }
+    }
+  }
+</script>
 
 <style scoped>
   .title{
