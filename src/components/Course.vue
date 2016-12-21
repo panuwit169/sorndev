@@ -2,7 +2,7 @@
   <div class="app">
     <Navbar></Navbar>
     <Allcourse :listplay="listplay"></Allcourse>
-    <!-- <Recommendcourse :listplay="listplay"></Recommendcourse> -->
+    <Recommendcourse :listplay="listplay"></Recommendcourse>
     <Footers></Footers>
   </div>
 </template>

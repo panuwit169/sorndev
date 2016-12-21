@@ -3,45 +3,23 @@
     <div class="popular_inner">
       <div class="container">
         <div class="row">
-          <div class="box col-xs-12 col-md-5">
-            <div class="col-md-4">
-              <img class="img" src="../assets/logo.png" width="120">
-            </div>
-            <div class="col-md-8 title">
-              <a href="#!">เริ่มต้นศึกษา Vue.JS</a>
-              <hr>
-              <p style="display:inline-block">กับ CodeAddictTH</p>
-              <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-5">
+          <div class="col-xs-12 col-md-5 headpop">
             <div class="headtitle">
               <h1>Course ยอดนิยม</h1>
               <router-link to = "/course"><a href="#!" class="link">เลือก Course อื่น ๆ</a></router-link>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="box col-xs-12 col-md-5">
+          <div class="box col-xs-12 col-md-5 list" v-for = "(list, index) in listplay" v-if="index<3">
             <div class="col-md-4">
-              <img class="img" src="../assets/angular.png" width="120">
+              <img class="img" :src="list.img" width="120">
             </div>
             <div class="col-md-8 title">
-              <a href="#!">เริ่มต้นศึกษา AngularJS</a>
+              <a href="#!">เริ่มต้นศึกษา {{list.name}}</a>
               <hr>
-              <p style="display:inline-block">กับ Kong Ruksiam</p>
-              <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
-            </div>
-          </div>
-          <div class="box col-xs-12 col-md-5">
-            <div class="col-md-4">
-              <img class="img" src="../assets/javascript.png" width="120">
-            </div>
-            <div class="col-md-8 title">
-              <a href="#!">เริ่มต้นศึกษา JavaScript</a>
-              <hr>
-              <p style="display:inline-block">กับ CodeAddictTH</p>
-              <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
+              <p style="display:inline-block">กับ {{list.teacher}}</p>
+              <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
+                <a href="#!"><img class="pull-right"src="../assets/play.png" width="50px"></a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -50,6 +28,15 @@
   </div>
 </template>
 
+<script>
+  export default {
+    props: ['listplay'],
+    data () {
+      return {
+      }
+    }
+  }
+</script>
 
 <style scoped>
 a{
@@ -79,8 +66,12 @@ p{
   color: #8d9aa8;
 }
 
+.headpop{
+  margin: 10px 10px;
+}
+
 .headtitle{
-  padding: 40px 0;
+  padding: 25px 0px 0 50px;
   font-weight: 700;
   font-size: 44px;
   color: #515057;
@@ -109,7 +100,7 @@ p{
 }
 
 .popular_inner{
-  margin: -15px 0;
+  margin: -35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,5 +120,9 @@ p{
 
 .img {
     padding: 20px 0;
+}
+
+.list{
+  margin: 10px 10px;
 }
 </style>
