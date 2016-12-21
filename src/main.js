@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
+import VueYouTubeEmbed from 'vue-youtube-embed'
 import Main from './components/Main'
 import Course from './components/Course'
 import Playlist from './components/Playlist'
 Vue.use(VueRouter)
+Vue.use(VueYouTubeEmbed)
 
 const router = new VueRouter({
   routes: [

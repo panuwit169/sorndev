@@ -1,7 +1,7 @@
 <template>
   <div class="course">
     <div class="container">
-      <h2>Lessons และ Courses ต่าง ๆ</h2>
+      <h1><strong>บทเรียนทั้งหมด</strong></h1>
       <div class="list" v-for = "(list, index) in listplay">
         <div class="row" style="padding:30px 0">
           <div class="logo">

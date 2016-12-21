@@ -13,7 +13,7 @@
       </div>
       <div class="col-xs-12 col-md-8">
         <div class="linklogo">
-          <router-link to = "/main"><a class="logo" href="#"><img src="../assets/learning.png" width="60px">&nbsp;&nbsp;SornDev</a></router-link>
+          <router-link to = "/main"><a class="logo" href="#"><img src="../assets/learning.png" width="90px">&nbsp;&nbsp;SornDev</a></router-link>
         </div>
       </div>
     </div>

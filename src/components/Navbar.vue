@@ -11,7 +11,7 @@
       </button>
       <router-link to = "/main">
         <a class="navbar-brand" href="#" style="padding:0px 30px 0 50px">
-          <img alt="SornDev" src="../assets/learning.png" width="50px">
+          <img alt="SornDev" src="../assets/learning.png" width="70px">
         </a>
       </router-link>
     </div>

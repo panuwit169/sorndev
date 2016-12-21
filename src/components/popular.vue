@@ -14,7 +14,9 @@
               <img class="img" :src="list.img" width="120">
             </div>
             <div class="col-md-8 title">
-              <a href="#!">เริ่มต้นศึกษา {{list.name}}</a>
+              <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
+                <a href="#!">เริ่มต้นศึกษา {{list.name}}</a>
+              </router-link>
               <hr>
               <p style="display:inline-block">กับ {{list.teacher}}</p>
               <router-link :to="{ name: 'Playlist', params: { play:list.name }}">

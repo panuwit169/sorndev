@@ -1,15 +1,11 @@
 <template>
   <div id="app">
-    <router-view :listplay="listplay"></router-view>
+      <router-view :listplay="listplay"></router-view>
   </div>
 </template>
 
 <script>
-// import Mains from './components/Mains'
-// import Showplay from './components/Showplay'
-// import Navbar from './components/Navbar'
-// import Banner from './components/Banner'
-// import Footers from './components/Footers'
+
 import firebase from 'firebase'
 
 var config = {

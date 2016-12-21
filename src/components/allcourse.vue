@@ -9,7 +9,7 @@
           <div class="col-xs-6 col-md-4" v-for = "list in listplay">
             <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
               <a href="#" class="thumbnail" style="vertical-align: middle">
-                <img class="menu" :src="list.img" width="100">
+                <img class="menu" :src="list.img" width="100px">
               <h4>
                 {{list.name}}  <span class="badge">{{list.list.length}}</span>
               </h4>
