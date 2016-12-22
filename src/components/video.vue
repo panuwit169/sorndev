@@ -13,7 +13,7 @@
       </div>
       <div class="col-md-12">
         <div class="description">
-          <p>{{play.description}}</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{play.description}}</p>
         </div>
       </div>
     </div>

@@ -1,15 +1,23 @@
 <template>
   <div class="course">
     <div class="container">
-      <h1><strong>บทเรียนทั้งหมด</strong></h1>
-      <div class="list" v-for = "(list, index) in listplay">
+      <h1><strong>รายละเอียด บทเรียนทั้งหมด</strong></h1>
+      <div class="list col-xs-6 col-md-4" v-for = "(list, index) in listplay">
         <div class="row" style="padding:30px 0">
+          <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
+          <a href="#!" class="thumbnail">
           <div class="logo">
             <img :src="list.img" width="100">
-            <h3>{{list.name}} Lessons</h3>
+            <h3>{{list.name}} Courses</h3>
             <p class="by">โดย {{list.teacher}}</p>
           </div>
           <div class="row">
+                <div class="col-xs-12 col-md-12" style="height:400px">
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;{{list.description}}</p>
+                </div>
+            </router-link>
+          </div>
+          <!-- <div class="row">
             <div class="col-xs-6 col-md-4" style="height:160px" v-for ="(listplay, index) in list.list">
               <router-link :to="{ name: 'Playlist', params: { play:list.name }}">
                 <a href="#!" class="thumbnail">
@@ -18,7 +26,8 @@
                 </a>
               </router-link>
             </div>
-          </div>
+          </div> -->
+          </a>
         </div>
       </div>
     </div>
@@ -27,29 +36,7 @@
 
 <script>
 export default {
-  props: ['listplay'],
-  // computed: {
-  //   play () {
-  //     let vm = this
-  //     return vm.listplay.find(item => item.name === vm.$route.params.play)
-  //   }
-  // },
-  // data () {
-  //   return {
-  //     link: ''
-  //   }
-  // },
-  // mounted () {
-  //   // var vm = this
-  //   this.link = this.play.list[0].link
-  //   let vm = this
-  //   return vm.listplay.find(item => item.name === vm.$route.params.play)
-  // },
-  // methods: {
-  //   setlink (link) {
-  //     this.link = link
-  //   }
-  // }
+  props: ['listplay']
 }
 </script>
 
@@ -71,6 +58,7 @@ export default {
 .by{
     color: #bac6c9;
     font-size: 14px;
+    text-align: center;
 }
 
 a{
@@ -87,7 +75,8 @@ a:hover{
 }
 
 p{
-  font-size: 18px;
+  font-size: 16px;
+  text-align: left;
 }
 
 </style>
