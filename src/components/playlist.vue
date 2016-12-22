@@ -7,21 +7,20 @@
           <div class="col-md-12" style="height:478px;overflow: hidden;">
             <div class="col-xs-8 col-md-9" style="padding:0px">
               <div class="embed-responsive embed-responsive-16by9" style="border:5px solid #555">
-                <!-- <iframe class="embed-responsive-item" :src="'http://www.youtube.com/embed/'+ link + '?autoplay=1'"  frameborder="0" allowfullscreen ></iframe> -->
-                <youtube :video-id="link" :player-vars="{autoplay: 1}"></youtube>
+                <iframe class="embed-responsive-item" :src="'https://www.youtube.com/embed/'+ link + '?autoplay=1'"  frameborder="0" allowfullscreen ></iframe>
+                <!-- <youtube :video-id="link" :player-vars="{autoplay: 1}"></youtube> -->
               </div>
             </div>
             <div class="col-xs-4 col-md-3 scrollbar" id="style-1">
-              <p>{{link}}</p>
               <div v-for ="(list, index) in play.list" @click = "setlink(list.link)">
-              <a class="list">
-                <div class="img">
-                  <strong style="padding:0 10px">{{index+1}}</strong>
-                  <img class="pull-left" :src="play.img" width="50px">
-                  <strong style="text-align:left;padding:0 10px">ตอนที่ {{index+1}} {{list.ep}}</strong>
-                </div>
-              </a>
-            </div>
+                <a class="list">
+                  <div class="img">
+                    <strong style="padding:0 10px">{{index+1}}</strong>
+                    <img class="pull-left" :src="play.img" width="50px">
+                    <strong style="text-align:left;padding:0 10px">ตอนที่ {{index+1}} {{list.ep}}</strong>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <p class="pull-right" style="padding: 10px 15px;font-size:16px;color:#555 ">สอนโดย {{play.teacher}}</p>
@@ -46,7 +45,9 @@ export default {
   computed: {
     play() {
       let vm = this
+      //console.log(vm.listplay.find(item => item.name === vm.$route.params.play))
       return vm.listplay.find(item => item.name === vm.$route.params.play)
+
     }
   },
   data () {
@@ -56,8 +57,8 @@ export default {
   },
   mounted () {
     //this.videoId = this.$youtube.getIdFromURL(this.play.list[0].link)
-    console.log (this.play.list[0].link)
-    //this.link = this.play.list[0].link
+    //console.log (this.play.list[0].link)
+    this.link = this.play.list[0].link
   },
   methods: {
     setlink(link) {
