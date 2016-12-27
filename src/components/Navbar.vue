@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <router-link to = "/main">
+      <router-link to = "/">
         <a class="navbar-brand" href="#" style="padding:0px 30px 0 50px">
           <img alt="SornDev" src="../assets/learning.png" width="70px">
         </a>

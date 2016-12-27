@@ -11,12 +11,24 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes: [
-    {name: 'Main', path: '/Main', component: Main},
+    {name: '/', path: '/', component: Main},
     {name: 'Course', path: '/Course', component: Course},
-    {name: 'Playlist', path: '/Playlist', component: Playlist}
+    {name: 'Playlist', path: '/Playlist', component: Playlist},
+    {path: '*', redirect: '/' }
   ]
 })
 
+// router.beforeEach((to, from, next) => {
+//   if(to.meta.requiresAuth){
+//     const authUser = JSON.parse(window.localStorage.getItem('authUser'))
+//     if (authUser && authUser.access_token){
+//       next()
+//     }else{
+//       next({name: 'Main'})
+//     }
+//   }
+//   next()
+// })
 /* eslint-disable no-new */
 new Vue({
   router,

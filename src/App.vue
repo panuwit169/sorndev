@@ -27,7 +27,7 @@ export default {
   },
   mounted () {
     var vm = this
-    vm.$router.push('./main')
+    vm.$router.push('.')
     Listplay.on('child_added', function (data) {
       var item = data.val()
       item.id = data.key
