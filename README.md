@@ -1,8 +1,8 @@
 # sorndev
 
-> วิดีโอการสอน Web Development สำหรับ Developer 
-> ใช้ JavaScript Framework คือ Vue.JS
-> Real-Time Database ใช้ Firebase
+> วิดีโอการสอน Web Development สำหรับ Developer <br>
+> ใช้ JavaScript Framework คือ Vue.JS<br>
+> Real-Time Database ใช้ Firebase<br>
 
 ## Build Setup
 
